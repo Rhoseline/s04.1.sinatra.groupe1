@@ -1,0 +1,56 @@
+html {
+  padding: 1em 3em;
+  font-family: calibri, ubuntu, sans-serif;
+  color: #444;
+  background: #DEA; #it's the f* DEA
+}
+
+body {
+  background: #F5F5F5;
+  border: 1px solid #888;
+  box-shadow: 2px 2px 3px #486;
+  padding: 2em;
+}
+
+h1 {
+  color: #C55;
+  border-bottom: 2px dotted #444;
+}
+
+a {
+  text-decoration: none;
+  font-size: bold;
+  color: #E96;
+  text-shadow:  1px 1px 1px #333;
+}
+a:hover {
+  text-shadow:  2px 2px 2px #333;
+  font-size: bolder;
+  color: #FA7;
+}
+a:active {
+  text-shadow: 0 0 0 ;
+  font-size: bolder;
+}
+a:visited {
+  color: #44E;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    box-shadow: 1px 1px 1px #333;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=submit]:hover {
+  box-shadow: 2px 2px 2px #333;
+}
+input[type=submit]:active {
+  box-shadow: 0 0 0 ;
+}
+input[type=submit]:focus {
+  outline: none;
+}

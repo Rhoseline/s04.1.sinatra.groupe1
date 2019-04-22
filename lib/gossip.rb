@@ -11,6 +11,10 @@ class Gossip
     end
   end
 
+  def comment (text)
+
+  end
+
   def self.all
     all_gossips = CSV.read("./db/gossip.csv").map do |csv_line|
       Gossip.new(csv_line[0], csv_line[1])
