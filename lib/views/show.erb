@@ -10,7 +10,22 @@
     <p>Potin n° <%= id %></p>
     <p>"<%= gossip.content %>"</p>
     <p>... et c'est <%= gossip.author %> qui le dit !</p>
-    <a href="/gossips/<%= id %>/edit">MODIFIER le potin</a><br/>
+
+    <a href="/gossips/<%= id %>/edit">MODIFIER le potin</a><br/><br>
     <a href="/">retour au menu</a>
+    
+    <h2>Commentaires</h2>
+
+    <% comments.each do |comment| %>
+      <p class="comment">
+        <%= comment.text %>
+      </p>
+    <% end %>
+
+    <form action='/gossips/com/<%= id %>' method='POST'>
+      <input type='text' name='com_text'/>
+      <input type='submit'/>
+    </form>
+
   </body>
 </html>

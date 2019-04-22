@@ -1,4 +1,5 @@
 require 'gossip'
+require 'comment'
 
 class ApplicationController < Sinatra::Base
 
@@ -9,7 +10,8 @@ class ApplicationController < Sinatra::Base
   get '/gossips/:id' do
     erb :show, locals: {
       id: params["id"],
-      gossip: Gossip.find(params["id"].to_i)
+      gossip: Gossip.find(params["id"]),
+      comments: Comment.get(params["id"])
     }
   end
 
@@ -17,6 +19,15 @@ class ApplicationController < Sinatra::Base
     erb :edit, locals: {
       id: params["id"],
       gossip: Gossip.find(params["id"].to_i)
+    }
+  end
+
+  post '/gossips/com/:id' do #ajout d'un commentaire
+    Comment.add(params["id"],params["com_text"])
+    erb :show, locals: {
+      id: params["id"],
+      gossip: Gossip.find(params["id"]),
+      comments: Comment.get(params["id"])
     }
   end
 

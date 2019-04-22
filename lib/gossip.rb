@@ -11,10 +11,6 @@ class Gossip
     end
   end
 
-  def comment (text)
-
-  end
-
   def self.all
     all_gossips = CSV.read("./db/gossip.csv").map do |csv_line|
       Gossip.new(csv_line[0], csv_line[1])
@@ -23,7 +19,7 @@ class Gossip
   end
 
   def self.find (id)
-    row = CSV.read("./db/gossip.csv")[id]
+    row = CSV.read("./db/gossip.csv")[id.to_i]
     Gossip.new(row[0], row[1])
   end
 

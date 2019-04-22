@@ -22,6 +22,7 @@ a {
   font-size: bold;
   color: #E96;
   text-shadow:  1px 1px 1px #333;
+
 }
 a:hover {
   text-shadow:  2px 2px 2px #333;
@@ -53,4 +54,17 @@ input[type=submit]:active {
 }
 input[type=submit]:focus {
   outline: none;
+}
+
+p {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.comment {
+  text-align: right;
+  border-bottom: 1px solid #FFF;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
 }

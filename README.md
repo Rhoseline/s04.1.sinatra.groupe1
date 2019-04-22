@@ -19,4 +19,7 @@ cette fois je suis tout seeeeeul
 
 ## jusqu'ou ?
 
-je m'arrête aux commentaires pour mater GOT
+je m'arrête aux commentaires pour mater GOT...
+
+... et je reprends ce soir pour faire les commentaires,
+la flemme de faire la suppression, assume ce que tu écris =)
