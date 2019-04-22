@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <a href="/">retour au menu</a>
+    <h1>MODIFIER un potin !</h1>
+    <form action='/gossips/<%= id %>/edit/' method='POST'>
+      Qui l'a dit :
+      <input type='text' name='gossip_author'
+      value="<%= gossip.author %>"/><br/>
+      Que dit-il ? :
+      <input type='text' name='gossip_content'
+      value="<%= gossip.content %>"/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
